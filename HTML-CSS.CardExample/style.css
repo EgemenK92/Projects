@@ -1,0 +1,69 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+:root{
+    --primaryOrange: hsl(31, 77%, 52%);
+    --primaryDarkCyan: hsl(184, 100%, 22%);
+    --primaryVeryDarkCyan: hsl(179, 100%, 13%);
+    --neutralTransparentWhite:hsla(0, 0%, 100%, 0.75);
+    --neutralVeryLightGray:hsl(0, 0%, 95%);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--neutralVeryLightGray);
+}
+
+.card-group .card:first-child {
+    background-color: var(--primaryOrange);
+}
+
+.card-group .card:nth-child(2){
+    background-color: var(--primaryDarkCyan);
+}
+.card-group .card:last-child{
+    background-color: var(--primaryVeryDarkCyan);
+}
+.card-group .card h5 {
+    color: var(--neutralVeryLightGray);
+    font-size: 30px;
+}
+.card-group .card p {
+    color: var(--neutralTransparentWhite);
+}
+.card-group .card {
+    max-width: 300px;
+    padding: 50px 30px;
+}
+
+button.btn  {
+    background-color: var(--neutralVeryLightGray);
+    border-radius: 25px;
+    padding: 10px 30px;
+    font-weight: 600;
+}
+
+.card:nth-child(1) .btn {
+    color: var(--primaryOrange);
+} 
+.card:nth-child(2) .btn {
+    color: var(--primaryDarkCyan);
+}
+.card:nth-child(3) .btn {
+    color: var(--primaryVeryDarkCyan);
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: inherit;
+    color: var(--neutralVeryLightGray) !important;
+    border: 1px solid var(--neutralVeryLightGray);
+}
+
+/* From uiverse.io by @Ali-Tahmazi99 */
