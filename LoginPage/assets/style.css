@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Playpen Sans', cursive;
+}
+.container {
+  display: flex;
+  width: 800px;
+  height: 500px;
+  box-shadow: 5px 5px 5px;
+}
+.container .left {
+  background-color: aliceblue;
+  color: rgb(87, 41, 41);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 50px;
+  width: 400px;
+  gap: 10px;
+}
+
+.container .left .icons {
+  display: flex;
+  gap: 20px;
+  font-size: 1.5rem;
+}
+.container .left .icons i {
+  border: 1px solid rgb(87, 41, 41);
+  border-radius: 50%;
+  padding: 10px;
+  transition: all 0.5s ease-in;
+}
+.container .left .icons i:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+  background-color: rgb(87, 41, 41);
+  color: aliceblue;
+}
+.container .left h2 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.container .left .inputs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.container .left .inputs input {
+  margin-bottom: 10px;
+  line-height: 35px;
+  outline: none;
+  border: none;
+  background-color: rgb(213, 211, 211);
+  padding: 5px 15px 5px 15px;
+}
+
+.container .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 400px;
+  border-radius: 0px 10px 10px 0px;
+  /* padding: 50px; */
+  color: aliceblue;
+  background: linear-gradient(60deg, #e24355, #e13d6b);
+}
+.container .right h2 {
+  padding: 15px 0 15px 0px;
+}
+.container .right p {
+  padding: 15px 0 15px 0px;
+}
+
+.container button {
+  padding: 10px 40px 10px 40px;
+  border-radius: 25px;
+  color: whitesmoke;
+}
+
+.container .left .btn-1 {
+  background-color: rgb(87, 41, 41);
+  font-weight: 600;
+  transition: all 0.7s ease-in-out;
+}
+.container .left .btn-1:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: aliceblue;
+  color: rgb(87, 41, 41);
+  border: 1.5px solid rgb(87, 41, 41);
+}
+
+.container .left > p {
+  cursor: pointer;
+  font-weight: 200;
+}
+.container .left > p:hover {
+  border-bottom: 1px solid rgb(87, 41, 41);
+}
+
+.container .right .btn-2 {
+  background-color: inherit;
+  border: 1.5px solid aliceblue;
+  transition: all 1s ease-in-out;
+  font-weight: 600;
+}
+.container .right .btn-2:hover {
+  cursor: pointer;
+  transform: scale(1.1) rotate(360deg);
+  background-color: aliceblue;
+  color: #e13d6b;
+}
+.container .right > h2 {
+    font-size: 2.5rem;
+}
+.container .right > p {
+    font-size: 23px;
+    padding: 20px;
+    font-weight: 200;
+}
