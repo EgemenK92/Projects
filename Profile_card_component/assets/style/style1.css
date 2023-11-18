@@ -1,0 +1,63 @@
+:root{
+    --primaryDarkCyan: hsl(185, 75%, 39%);
+    --primaryVeryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+    --primaryDarkGrayishBlue: hsl(227, 10%, 46%);
+    --neutraldarkGray:hsl(0, 0%, 59%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url("/assets/images/bg-pattern-top.svg"), url("/assets/images/bg-pattern-bottom.svg");
+    background-color: var(--primaryDarkCyan);
+    background-repeat: no-repeat;
+    background-position: right 52vw bottom 35vh, left 48vw top 52vh;
+}
+
+.card {
+    max-width: 330px; 
+    border: none;
+    
+     
+}
+
+.card .profile {
+    border: 4px solid white;
+    border-radius: 50%;
+    top: 33%;
+    left: 165px;
+    transform: translate(-50%,-50%);
+}
+
+.card-body{
+    margin-top: 50px;
+}
+.card-body h5>span {
+    color: var(--neutraldarkGray);
+}
+.card-text {
+    color: var(--neutraldarkGray);
+}
+
+.card-footer {
+    background-color: inherit;
+    border: none;
+    border-top: 1px solid var(--neutraldarkGray) !important;
+    margin-top: 20px;
+}
+
+.card-footer .footer-d p {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.card-footer .footer-d span {
+    color: var(--neutraldarkGray);
+    font-size: 0.8rem;
+    text-align: center;
+    font-weight: 500;
+}
+
